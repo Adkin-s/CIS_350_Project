@@ -1,7 +1,7 @@
 # CIS_350_Project
 # SNRK Bot
 
-Simple overview of use/purpose.
+Passive Aggressive AI Chatbot App.
 
 ## Description
 
@@ -43,7 +43,6 @@ Eli
 
 * 0.2
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
 
