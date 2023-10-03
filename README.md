@@ -38,7 +38,7 @@ command to run if program contains helper info
 
 James Brands
 Elijah Morgan
-Other Kid
+Drew Adkins
 
 ## Version History
 
