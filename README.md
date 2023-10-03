@@ -37,7 +37,8 @@ command to run if program contains helper info
 ## Authors
 
 James Brands
-Eli
+Elijah Morgan
+Other Kid
 
 ## Version History
 
