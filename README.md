@@ -7,6 +7,10 @@ Passive Aggressive AI Chatbot App.
 
 An in-depth paragraph about your project and overview of use.
 
+## Diagrams
+
+Will add diagrams here...
+
 ## Getting Started
 
 ### Dependencies
