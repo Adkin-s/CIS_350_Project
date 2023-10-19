@@ -8,13 +8,15 @@ Multi-Personality AI Chatbot App.
 An in-depth paragraph about your project and overview of use.
 
 ## Diagrams
+### Sequence Diagram
 ![SequenceDiagram](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/07ee623e-a315-4601-b451-2798110873b4)
+### 
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
+* Describe any prerequisites, libraries, OS version, etc., needed before installing the program.
 * ex. Windows 10
 
 ### Installing
