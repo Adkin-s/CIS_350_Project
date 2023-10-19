@@ -1,7 +1,7 @@
 # CIS_350_Project
 # SNRK Bot
 
-Passive Aggressive AI Chatbot App.
+Multi-Personality AI Chatbot App.
 
 ## Description
 
@@ -9,7 +9,6 @@ An in-depth paragraph about your project and overview of use.
 
 ## Diagrams
 
-Will add diagrams here...
 
 ## Getting Started
 
