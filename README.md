@@ -8,7 +8,7 @@ Multi-Personality AI Chatbot App.
 An in-depth paragraph about your project and overview of use.
 
 ## Diagrams
-
+![SequenceDiagram](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/07ee623e-a315-4601-b451-2798110873b4)
 
 ## Getting Started
 
