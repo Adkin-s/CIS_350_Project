@@ -1,10 +1,12 @@
-import pyrebase
 from warnings import warn
 from firebaseConfig import firebase
 
 db = firebase.database()
 
 #TODO Turn UserData class into helper functions.
+#FIXME Maybe don't remove class, but only call it once upon logging in. Then use helper functions to access data.
+    #Example logic: Init_app -> enter email, if email exists, create UserData object, else prompt to create a new user.
+
 class UserData():
     def __init__(self, email):
         self.email = email

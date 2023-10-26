@@ -1,4 +1,3 @@
-import pyrebase
 from warnings import warn
 from firebaseConfig import firebase
 
