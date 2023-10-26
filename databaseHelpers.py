@@ -1,53 +1,13 @@
 import pyrebase
 import warnings
-
-firebaseConfig = {
-    'apiKey': "AIzaSyCXRXtK07m6wmrX4ZPhzYXevo_Dv2MCENI",
-    'authDomain': "snrk-a6050.firebaseapp.com",
-    'databaseURL': "https://snrk-a6050-default-rtdb.firebaseio.com",
-    'projectId': "snrk-a6050",
-    'storageBucket': "snrk-a6050.appspot.com",
-    'messagingSenderId': "227455950615",
-    'appId': "1:227455950615:web:ec7caa4f3a41168c936152"
-}
-
-firebase = pyrebase.initialize_app(firebaseConfig)
+from firebaseConfig import firebase
 
 db = firebase.database()
-auth = firebase.auth()
 
 def warn(message):
     warnings.warn(message)
 
-class Authentication():
-    def __init__(self, email, _password):
-        self.email = email
-        self._password = _password
-
-    def login(self):
-        try:
-            auth.sign_in_with_email_and_password(self.email, self._password)
-            return True
-        except:
-            warn("Invalid email or password.")
-            return False
-
-    def signup(self):
-        try:
-            auth.create_user_with_email_and_password(self.email, self._password)
-            return True
-        except:
-            warn("Email already exists.")
-            return False
-    
-    def reset_password(self):
-        try:
-            auth.send_password_reset_email(self.email)
-            return True
-        except:
-            warn("Email does not exist.")
-            return False
-        
+#TODO Turn UserData class into helper functions.
 class UserData():
     def __init__(self, email):
         self.email = email

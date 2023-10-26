@@ -1,4 +1,5 @@
-import database as db
+import authHelpers as auth
+import databaseHelpers as db
 
 '''
 #UserData test. - Failed
@@ -11,8 +12,7 @@ print(testuser.get_user())
 '''
 #Authentication test. - Passed
 
-testlogin = db.Authentication("funnyman@sharklasers.com", "funnyman")
-testlogin.signup()
-testlogin.login()
-testlogin.reset_password()
+auth.signup("funnyman@sharklasers.com", "funnyman")
+auth.login("funnyman@sharklasers.com", "funnyman")
+auth.reset_password("funnyman@sharklasers.com")
 '''
