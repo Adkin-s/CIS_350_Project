@@ -15,19 +15,21 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 
 db = firebase.database()
 auth = firebase.auth()
-warn = warnings.warn()
+
+def warn(message):
+    warnings.warn(message)
 
 class Authentication():
-    def __init__(self, email, password):
+    def __init__(self, email, _password):
         self.email = email
-        self._password = password
+        self._password = _password
 
     def login(self):
         try:
             auth.sign_in_with_email_and_password(self.email, self._password)
             return True
         except:
-            # Invalid email or password.
+            warn("Invalid email or password.")
             return False
 
     def signup(self):
@@ -35,7 +37,7 @@ class Authentication():
             auth.create_user_with_email_and_password(self.email, self._password)
             return True
         except:
-            # Email already exists.
+            warn("Email already exists.")
             return False
     
     def reset_password(self):
@@ -43,7 +45,7 @@ class Authentication():
             auth.send_password_reset_email(self.email)
             return True
         except:
-            # Email does not exist.
+            warn("Email does not exist.")
             return False
         
 class UserData():
