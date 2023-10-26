@@ -1,21 +1,16 @@
 import pyrebase
-import warnings
+from warnings import warn
 from firebaseConfig import firebase
 
 db = firebase.database()
-
-def warn(message):
-    warnings.warn(message)
 
 #TODO Turn UserData class into helper functions.
 class UserData():
     def __init__(self, email):
         self.email = email
         self.user = db.child("users").child(self.email)
-        #Database structure: db* -> users* -> email -> conversations* -> conversation_id -> message_id -> message
-        # * = unchanging node
-
-        #TODO create message_id and conversation_id generator here, or in a separate file.
+        #Database structure: db -> users : email -> conversations : conversation_id -> messages : message_id -> message : raw_str
+        #TODO create message_id and conversation_id generator (conversation_id [persona_type][int], message_id [date][human_or_persona]).
 
     def create_user(self):
         if self.user.get().val() == None:

@@ -1,11 +1,8 @@
 import pyrebase
-import warnings
+from warnings import warn
 from firebaseConfig import firebase
 
 auth = firebase.auth()
-
-def warn(message):
-    warnings.warn(message)
 
 def login(self, email, _password):
     try:
