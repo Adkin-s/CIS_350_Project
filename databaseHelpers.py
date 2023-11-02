@@ -16,7 +16,7 @@ class UserData():
 
     def create_user(self):
         if self.user.get().val() == None:
-            self.user.set(self.email)
+            self.user.push(self.email)
             return True
         else:
             warn("User already exists.")
@@ -33,7 +33,7 @@ class UserData():
         new_conversation = self.user.child("conversations").child(conversation_id)
 
         if new_conversation.get().val() == None:
-            new_conversation.set(conversation_id)
+            new_conversation.push(conversation_id)
             return True
         else:
             warn("Conversation already exists")
@@ -52,7 +52,7 @@ class UserData():
         new_message = self.user.child(conversation_id).child(message_id)
 
         if new_message.get().val() == None:
-            new_message.set(message)
+            new_message.push(message)
             return True
         else:
             warn("Message already exists.")
@@ -116,4 +116,3 @@ class UserData():
         else:
             warn("User does not exist.")
             return False
-    
