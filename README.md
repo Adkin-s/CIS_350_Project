@@ -1,11 +1,12 @@
 # CIS_350_Project
 # SNRK Bot
+The Multi-Personality AI Chatbot App.
 
+# Abstract
+SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas.
+
+# Description
 Multi-Personality AI Chatbot App.
-
-## Description
-
-An in-depth paragraph about your project and overview of use.
 
 ## Diagrams
 ### Sequence Diagram
