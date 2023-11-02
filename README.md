@@ -10,7 +10,9 @@ An in-depth paragraph about your project and overview of use.
 ## Diagrams
 ### Sequence Diagram
 ![SequenceDiagram](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/07ee623e-a315-4601-b451-2798110873b4)
-### 
+### Use Case
+![SNRK Use Case](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/03a4bfae-4de7-4983-9652-164b311efdbd)
+
 
 ## Getting Started
 
