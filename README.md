@@ -6,7 +6,13 @@ The Multi-Personality AI Chatbot App.
 SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas.
 
 # Description
-Multi-Personality AI Chatbot App.
+SNRK is a unique chatbot application that stands out for its ability to embody multiple distinct personalities. Users can engage in dynamic and personalized conversations with SNRK, selecting from a variety of pre-defined personas that range from friendly and helpful to witty and sassy. The chatbot's natural language understanding capabilities ensure smooth interactions, and users can switch between personalities during conversations. SNRK is highly customizable, allowing users to define their preferred personalities and traits. SNRK redefines the chatbot experience, offering users a multifaceted and engaging conversational partner.
+
+# Architectural Design
+SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or login, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the.
+
+## Server - Check!
+The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and the output is sent to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
 
 ## Diagrams
 ### Sequence Diagram
