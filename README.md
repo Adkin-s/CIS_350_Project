@@ -5,11 +5,13 @@ The Multi-Personality AI Chatbot App.
 # Abstract
 SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas.
 
+#Introduction
+
 # Description
 SNRK is a unique chatbot application that stands out for its ability to embody multiple distinct personalities. Users can engage in dynamic and personalized conversations with SNRK, selecting from a variety of pre-defined personas that range from friendly and helpful to witty and sassy. The chatbot's natural language understanding capabilities ensure smooth interactions, and users can switch between personalities during conversations. SNRK is highly customizable, allowing users to define their preferred personalities and traits. SNRK redefines the chatbot experience, offering users a multifaceted and engaging conversational partner.
 
 # Architectural Design
-SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or login, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the.
+SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the.
 
 ## Server - Check!
 The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and the output is sent to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
@@ -22,35 +24,30 @@ The server-side processing will be enabled using Firebase. Whenever a new user r
 ### Class Diagram
 ![SNRK Class UML](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/35142850-cc3c-457a-aa0e-680af128e412)
 
+# User Guide/Implementation
+## Starting the application
+First, the user needs to install the SNRK bot app from the app store onto their device. After installation, an icon should appear on the home screen. Click on the icon to open the SNRK bot app, and the user will be prompted with a signup or login page.
 
-### Installing
+## Registration
+Before using the app, the user will be required to either sign up for the app or to log into an existing account. The user will be asked to enter either an existing password and username to log in, or a unique username and password to create a new account. This data will be stored on a server and will be confidentiality stored.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+# PICTURE OF LOGIN/SIGN UP PAGE HERE
 
-### Executing program
+## Home Screen - Check!
+After logging in or signing up for SNRK, the user will be brought to a home screen where the user will have the ability to access different conversations with different personalities. The user will be able to press on each of the personalities to either begin or continue a conversation with this chatbot.
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+# PICTURE OF HOMESCREEN WHEN FIRST LOGGED IN
 
-## Help
+## Starting a conversation
+If the conversation is accessed for the first time, they will be prompted with a message about that specific personality and what to expect when engaging with it. If not, the user will have the 5 most recently sent messages and chatbot outputs also given so that the user is able to remember their last conversation. To begin a conversation all the user has to do is type to the chatbot using the message box, and then press send and the user will receive a response from the chatbot.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+# Future Ideas
+We would like to add a user function that allows the user to create their own personality chatbot to suit their specific desires. We would also like to add more themes for the app, as well as animations for when you open a conversation with a specific personality. We believe these ideas will make the app even more exciting for the user. 
 
-## Authors
-
-James Brands
-Elijah Morgan
-Drew Adkins
+# Conclusion
+We at SNRK believe that our multi-personality chatbot is a fun, easy-to-use chatbot, that you will be able to use for hours on end in your personal life.
 
 ## Version History
-
 * 0.2
     * Various bug fixes and optimizations
 * 0.1
@@ -61,3 +58,4 @@ Drew Adkins
 
 Inspiration, code snippets, etc.
 * [README-Template.md](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
+* [ParkInAndriodReadMe-template](https://github.com/hridoy100/ParkInAndroid#readme)
