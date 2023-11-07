@@ -2,6 +2,9 @@
 # SNRK Bot
 The Multi-Personality AI Chatbot App.
 
+### Made By:
+James Brands, Elijah Morgan, 
+
 # Abstract
 SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas. We would like to create a chatbot that is extremely simple to use, and completely safe for users.
 
