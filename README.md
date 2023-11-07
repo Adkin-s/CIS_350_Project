@@ -8,8 +8,8 @@ SNRK is a chatbot designed to engage users in dynamic and personalized conversat
 # Description
 SNRK is a unique chatbot application that stands out for its ability to embody multiple distinct personalities. Users can engage in dynamic and personalized conversations with SNRK, selecting from a variety of pre-defined personas that range from friendly and helpful to witty and sassy. The chatbot's natural language understanding capabilities ensure smooth interactions, and users can switch between personalities during conversations. SNRK is highly customizable, allowing users to define their preferred personalities and traits. SNRK redefines the chatbot experience, offering users a multifaceted and engaging conversational partner.
 
-# Architectural Design
-SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the.
+# Architectural Design - Check!
+SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the user must either sign up or log in. Then once inside the app, the user can either choose to create a new conversation, or continue a old conversation if one exists.
 
 ## Server - Check!
 The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and the output is sent to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
@@ -45,11 +45,7 @@ We would like to add a user function that allows the user to create their own pe
 # Conclusion
 We at SNRK believe that our multi-personality chatbot is a fun, easy-to-use chatbot, that you will be able to use for hours on end in your personal life.
 
-## Version History
-* 0.2
-    * Various bug fixes and optimizations
-* 0.1
-    * Initial Release
+# Walkthrough Video
 
 
 ## Acknowledgments
