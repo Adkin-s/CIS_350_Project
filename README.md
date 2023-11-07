@@ -9,10 +9,10 @@ SNRK is a chatbot designed to engage users in dynamic and personalized conversat
 SNRK is a unique chatbot application that stands out for its ability to embody multiple distinct personalities. Users can engage in dynamic and personalized conversations with SNRK, selecting from a variety of pre-defined personas that range from friendly and helpful to witty and sassy. The chatbot's natural language understanding capabilities ensure smooth interactions, and users can switch between personalities during conversations. SNRK is highly customizable, allowing users to define their preferred personalities and traits. SNRK redefines the chatbot experience, offering users a multifaceted and engaging conversational partner.
 
 # Architectural Design - Check!
-SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the user must either sign up or log in. Then once inside the app, the user can either choose to create a new conversation, or continue a old conversation if one exists.
+SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the user must either sign up or log in. Then once inside the app, the user can either choose to create a new conversation or continue an old conversation if one exists.
 
 ## Server - Check!
-The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and the output is sent to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
+The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and sends the output to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
 
 ## Diagrams
 ### Sequence Diagram
@@ -27,7 +27,7 @@ The server-side processing will be enabled using Firebase. Whenever a new user r
 First, the user needs to install the SNRK bot app from the app store onto their device. After installation, an icon should appear on the home screen. Click on the icon to open the SNRK bot app, and the user will be prompted with a signup or login page.
 
 ## Registration
-Before using the app, the user will be required to either sign up for the app or to log into an existing account. The user will be asked to enter either an existing password and username to log in, or a unique username and password to create a new account. This data will be stored on a server and will be confidentiality stored.
+Before using the app, the user will be required to either sign up for the app or to log into an existing account. The user will be asked to enter either an existing password and username to log in or a unique username and password to create a new account. This data will be stored on a server and will be confidentiality stored.
 
 # PICTURE OF LOGIN/SIGN UP PAGE HERE
 
