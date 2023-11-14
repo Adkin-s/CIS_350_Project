@@ -1,5 +1,6 @@
 import authHelpers as auth
 import databaseHelpers as db
+import chatbot as cb
 
 '''
 #UserData test. - Failed

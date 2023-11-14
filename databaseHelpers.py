@@ -8,13 +8,13 @@ db = firebase.database()
     #Example logic: Init_app -> enter email, if email exists, create UserData object, else prompt to create a new user.
 
 class UserData():
-    def __init__(self, email):
+    def __init__(self, email) -> None:
         self.email = email
         self.user = db.child("users").child(self.email)
         #Database structure: db -> users : email -> conversations : conversation_id -> messages : message_id -> message : raw_str
         #TODO create message_id and conversation_id generator (conversation_id [persona_type][int], message_id [date][human_or_persona]).
 
-    def create_user(self):
+    def create_user(self) -> bool:
         if self.user.get().val() == None:
             self.user.push(self.email)
             return True
@@ -29,7 +29,7 @@ class UserData():
             warn("User does not exist.")
             return False
         
-    def create_conversation(self, conversation_id):
+    def create_conversation(self, conversation_id) -> bool:
         new_conversation = self.user.child("conversations").child(conversation_id)
 
         if new_conversation.get().val() == None:
@@ -48,7 +48,7 @@ class UserData():
             warn("Conversation does not exist.")
             return False
 
-    def add_message(self, conversation_id, message_id, message):
+    def add_message(self, conversation_id, message_id, message) -> bool:
         new_message = self.user.child(conversation_id).child(message_id)
 
         if new_message.get().val() == None:
@@ -60,7 +60,7 @@ class UserData():
         
     #TODO add function to edit message.
         
-    def get_message(self, conversation_id, message_id):
+    def get_message(self, conversation_id, message_id) -> str:
         return self.user.child("conversations").child(conversation_id).child("message_id").child(message_id).child("message").get().val()
     
     def get_all_messages(self, conversation_id):
@@ -77,7 +77,7 @@ class UserData():
             warn("Conversation does not exist.")
             return False
     
-    def delete_message(self, conversation_id, message_id):
+    def delete_message(self, conversation_id, message_id) -> bool:
         if self.user.child("conversations").child(conversation_id).child(message_id).get().val() != None:
             self.user.child("conversations").child(conversation_id).child(message_id).remove()
             return True
@@ -85,7 +85,7 @@ class UserData():
             warn("Message does not exist.")
             return False
     
-    def delete_all_messages(self, conversation_id):
+    def delete_all_messages(self, conversation_id) -> bool:
         if self.user.child("conversations").child(conversation_id).get().val() != None:
             self.user.child("conversations").child(conversation_id).remove()
             return True
@@ -93,7 +93,7 @@ class UserData():
             warn("Conversation does not exist, or has no messages.")
             return False
 
-    def delete_conversation(self, conversation_id):
+    def delete_conversation(self, conversation_id) -> bool:
         if self.user.child("conversations").child(conversation_id).get().val() != None:
             self.user.child("conversations").child(conversation_id).remove()
             return True
@@ -101,7 +101,7 @@ class UserData():
             warn("Conversation does not exist.")
             return False
     
-    def delete_all_conversations(self):
+    def delete_all_conversations(self) -> bool:
         if self.user.child("conversations").get().val() != None:
             self.user.child("conversations").remove()
             return True
@@ -109,7 +109,7 @@ class UserData():
             warn("User does not exist, or has no conversations.")
             return False
 
-    def delete_user(self):
+    def delete_user(self) -> bool:
         if self.user.get().val() != None:
             self.user.remove()
             return True
