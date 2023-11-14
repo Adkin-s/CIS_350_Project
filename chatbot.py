@@ -17,9 +17,8 @@ class Persona():
             self.message_history.insert(0, {"role": "system", "content": self.personality_statement})
             self.message_history.pop(1)
 
-    def updateDB(self, email, message_history) -> None:
-        pass
-        #TODO make this function update the database with the message history.
+    def getMessageHistory(self) -> list[dict]:
+        return self.message_history
     
     def prompt(self, prompt: str) -> str:
         self.message_history.append({"role": "user", "content": prompt})
@@ -35,7 +34,6 @@ class Persona():
                                                 )
         
         self.message_history.append(response)
-        #TODO updateDB() with message history.
 
         return response.choices[0]["message"]["content"]
 
