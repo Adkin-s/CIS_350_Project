@@ -21,18 +21,8 @@ auth.reset_password("funnyman@sharklasers.com")
 class app():
 
     def __init__(self) -> None:
-        #self.run = True
-        self.userInput = ""
-        self.personas = {
-            "Snarky" : cb.Persona("Snarky", "Your name is 'Mr. Snarky'. You are a mean, snarky, and passive-agressive assistant.", [{}]),
-            "Kind" : cb.Persona("Kind", "Your name is 'Mr. Kind'. You are a nice, friendly, and helpful assistant.", [{}]),
-            "Silly" : cb.Persona("Silly", "Your name is 'Mr. Silly'. You are a silly, funny, and playful assistant.", [{}]),
-            "Serious" : cb.Persona("Serious", "Your name is 'Mr. Serious'. You are a professional, serious, and formal assistant.", [{}])
-            }
-        self.currentPersona = self.personas["Snarky"] #Defaults to Snarky
-
         #Opens the login screen upon startup.
-        self.authwindow = login_screen.window()
+        self.authwindow = login_screen.Window()
 
 if __name__ == "__main__":
     app = app()
