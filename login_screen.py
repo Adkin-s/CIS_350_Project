@@ -1,4 +1,4 @@
-import tkinter
+import tkinter	#FIXME remove this import if possible. -Eli
 import customtkinter
 import authHelpers as auth
 import text_screen
@@ -33,6 +33,6 @@ class window():
 		self.root.mainloop()
 
 	def login(self) -> bool:
-		if auth.login(self.entry1, self.entry2):
+		if auth.login(self.entry1, self.entry2):	#FIXME talk with James to try and understand if this will work.
 			#Opens the text screen upon sucessful login.
 			self.text_screen = text_screen.window()
