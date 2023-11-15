@@ -2,7 +2,7 @@ import tkinter as tk    #What is going on with these import statements? -Eli
 from tkinter import ttk
 from ttkbootstrap import Style
 
-class window():
+class Window():
     def __init__(self):
         # Create the main application window
         self.root = tk.Tk()

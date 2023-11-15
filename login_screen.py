@@ -3,7 +3,7 @@ import customtkinter
 import authHelpers as auth
 import text_screen
 
-class window():
+class Window():
 	def __init__(self) -> None:
 		self.customtkinter.set_appearance_mode("dark")
 		self.customtkinter.set_default_color_theme("dark-blue")
@@ -35,4 +35,4 @@ class window():
 	def login(self) -> bool:
 		if auth.login(self.entry1, self.entry2):	#FIXME talk with James to try and understand if this will work.
 			#Opens the text screen upon sucessful login.
-			self.text_screen = text_screen.window()
+			self.text_screen = text_screen.Window()

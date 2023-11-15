@@ -32,7 +32,7 @@ class app():
         self.currentPersona = self.personas["Snarky"] #Defaults to Snarky
 
         #Opens the login screen upon startup.
-        self.authwindow = login_screen.login_screen(self)
+        self.authwindow = login_screen.window()
 
 if __name__ == "__main__":
     app = app()
