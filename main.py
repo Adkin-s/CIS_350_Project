@@ -1,6 +1,6 @@
-import authHelpers as auth
 import databaseHelpers as db
 import chatbot as cb
+import login_screen
 
 '''
 #UserData test. - Failed
@@ -21,7 +21,7 @@ auth.reset_password("funnyman@sharklasers.com")
 class app():
 
     def __init__(self) -> None:
-        self.run = True
+        #self.run = True
         self.userInput = ""
         self.personas = {
             "Snarky" : cb.Persona("Snarky", "Your name is 'Mr. Snarky'. You are a mean, snarky, and passive-agressive assistant.", [{}]),
@@ -31,22 +31,8 @@ class app():
             }
         self.currentPersona = self.personas["Snarky"] #Defaults to Snarky
 
-        if self.authWindow():
-            self.chatWindow()
-
-    def authWindow(self) -> bool:
-        #TODO show auth window
-        return auth.login("email", "password")  #TODO change this to take input from the GUI, REMEMBER NO PLAINTEXT/STORING PASSWORDS!!! (think functional programming)
-    
-    def chatWindow(self) -> None:
-        #TODO show chat window
-
-        while True: #FIXME: see below. Need GUI to implement this
-            #If button press, quit()
-
-            userinput = input("Ask " + self.currentPersona.name + " something:")  #TODO change this to take input from the GUIturn str(self.currentPersona.name + ": " + self.currentPersona.messageHistory[-1])
-            print("User: " + userinput) #TODO change this to print to the GUI
-            print(self.currentPersona.name + ': ' + self.currentPersona.prompt(userinput)) #TODO change this to print to the GUI
+        #Opens the login screen upon startup.
+        self.authwindow = login_screen.login_screen(self)
 
 if __name__ == "__main__":
     app = app()

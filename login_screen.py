@@ -1,35 +1,38 @@
 import tkinter
 import customtkinter
+import authHelpers as auth
+import text_screen
 
+class window():
+	def __init__(self) -> None:
+		self.customtkinter.set_appearance_mode("dark")
+		self.customtkinter.set_default_color_theme("dark-blue")
+		self.root = customtkinter.CTk()
+		root = self.root
+		root.geometry("500x350")
 
-customtkinter.set_appearance_mode("dark")
-customtkinter.set_default_color_theme("dark-blue")
+		self.frame = customtkinter.CTkFrame(master=root)
+		frame = self.frame
+		frame.pack(pady=20, padx=60, fill="both", expand=True)
 
-root = customtkinter.CTk()
-root.geometry("500x350")
+		self.label = customtkinter.CTkLabel(master=frame, text="Login System")
+		self.label.pack(pady=12, padx=10)
 
+		self.entry1 = customtkinter.CTkEntry(master=frame, placeholder_text="Username")
+		self.entry1.pack(pady=12, padx=10)
 
-def login():
-	print("test")
+		self.entry2 = customtkinter.CTkEntry(master=frame, placeholder_text="Password", show="*")
+		self.entry2.pack(pady=12, padx=10)
 
+		self.button = customtkinter.CTkButton(master=frame, text="Login", command=self.login)
+		self.button.pack(pady=12, padx=10)
 
-frame = customtkinter.CTkFrame(master=root)
-frame.pack(pady=20, padx=60, fill="both", expand=True)
+		self.checkbox = customtkinter.CTkCheckBox(master=frame, text="Remember Me")
+		self.checkbox.pack(pady=12, padx=10)
 
-label = customtkinter.CTkLabel(master=frame, text="Login System")
-label.pack(pady=12, padx=10)
+		self.root.mainloop()
 
-entry1 = customtkinter.CTkEntry(master=frame, placeholder_text="Username")
-entry1.pack(pady=12, padx=10)
-
-entry2 = customtkinter.CTkEntry(master=frame, placeholder_text="Password", show="*")
-entry2.pack(pady=12, padx=10)
-
-button = customtkinter.CTkButton(master=frame, text="Login", command=login)
-button.pack(pady=12, padx=10)
-
-checkbox = customtkinter.CTkCheckBox(master=frame, text="Remember Me")
-checkbox.pack(pady=12, padx=10)
-
-
-root.mainloop()
+	def login(self) -> bool:
+		if auth.login(self.entry1, self.entry2):
+			#Opens the text screen upon sucessful login.
+			self.text_screen = text_screen.window()
