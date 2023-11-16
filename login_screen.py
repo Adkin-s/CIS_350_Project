@@ -5,8 +5,8 @@ import text_screen
 
 class Window():
 	def __init__(self) -> None:
-		self.customtkinter.set_appearance_mode("dark")
-		self.customtkinter.set_default_color_theme("dark-blue")
+		customtkinter.set_appearance_mode("dark")
+		customtkinter.set_default_color_theme("dark-blue")
 		self.root = customtkinter.CTk()
 		root = self.root
 		root.geometry("500x350")
