@@ -57,8 +57,9 @@ class Window():
 
         if chatbotMessage:
             self.chat_display.configure(state='normal')
-            self.chat_display.insert('end', f"{self.currentPersona.name}: {message}\n")
+            self.chat_display.insert('end', f"{self.currentPersona.name}: {chatbotMessage}\n")
             self.chat_display.configure(state='disabled')
             self.message_input.delete(0, 'end')
         
+        message = None
         chatbotMessage = None
