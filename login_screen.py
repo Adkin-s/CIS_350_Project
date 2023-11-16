@@ -33,6 +33,6 @@ class Window():
 		self.root.mainloop()
 
 	def login(self) -> bool:
-		if auth.login(self.entry1, self.entry2):	#FIXME talk with James to try and understand if this will work.
+		if auth.login(self, self.entry1.get(), self.entry2.get()):	#FIXME talk with James to try and understand if this will work.
 			#Opens the text screen upon sucessful login.
 			self.text_screen = text_screen.Window()
