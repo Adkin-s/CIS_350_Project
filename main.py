@@ -1,6 +1,6 @@
-import authHelpers as auth
 import databaseHelpers as db
 import chatbot as cb
+import login_screen
 
 '''
 #UserData test. - Failed
@@ -17,3 +17,12 @@ auth.signup("funnyman@sharklasers.com", "funnyman")
 auth.login("funnyman@sharklasers.com", "funnyman")
 auth.reset_password("funnyman@sharklasers.com")
 '''
+
+class app():
+
+    def __init__(self) -> None:
+        #Opens the login screen upon startup.
+        self.authwindow = login_screen.Window()
+
+if __name__ == "__main__":
+    app = app()

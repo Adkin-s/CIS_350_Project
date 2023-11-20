@@ -19,9 +19,19 @@ class Persona():
 
     def getMessageHistory(self) -> list[dict]:
         return self.message_history
-    
+
+    def filteredMessageHistory(self):   #returns User only message history.
+        filtered_message_history = []
+
+        for i in self.getMessageHistory():
+            if "model" in i:
+                filtered_message_history.append({'role':i['choices'][0]['message']['role'], 'content': i['choices'][0]['message']['content']})
+            else:
+                filtered_message_history.append(i)
+        return filtered_message_history
+
     def prompt(self, prompt: str) -> str:
-        self.message_history.append({"role": "user", "content": prompt})
+        self.getMessageHistory().append({"role": "user", "content": prompt})
 
         # Limit message history to 10 messages (not including personality statement).
         if len(self.message_history) > 11:
@@ -29,11 +39,11 @@ class Persona():
 
         response = openai.ChatCompletion.create(
                                                 model="gpt-3.5-turbo",
-                                                messages=copy.deepcopy(self.message_history),
-                                                max_tokens=100
+                                                messages=copy.deepcopy(self.filteredMessageHistory()),
+                                                max_tokens=1000
                                                 )
         
-        self.message_history.append(response)
+        self.getMessageHistory().append(response)
 
         return response.choices[0]["message"]["content"]
 
