@@ -40,7 +40,7 @@ class Persona():
         response = openai.ChatCompletion.create(
                                                 model="gpt-3.5-turbo",
                                                 messages=copy.deepcopy(self.filteredMessageHistory()),
-                                                max_tokens=100
+                                                max_tokens=1000
                                                 )
         
         self.getMessageHistory().append(response)
