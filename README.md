@@ -32,15 +32,18 @@ First, the user needs to install the SNRK bot app from the app store onto their 
 ## Registration
 Before using the app, the user will be required to either sign up for the app or to log into an existing account. The user will be asked to enter either an existing password and username to log in or a unique username and password to create a new account. This data will be stored on a server and will be confidentiality stored.
 
-# PICTURE OF LOGIN/SIGN UP PAGE HERE
+![Screenshot_from_2023-12-02_12-29-14](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/f120a2fe-ad90-4e49-ac0c-ad99bf9fc73f)
 
 ## Home Screen - Check!
 After logging in or signing up for SNRK, the user will be brought to a home screen where the user will have the ability to access different conversations with different personalities. The user will be able to press on each of the personalities to either begin or continue a conversation with this chatbot.
 
-# PICTURE OF HOMESCREEN WHEN FIRST LOGGED IN
+![Screenshot_from_2023-12-02_12-25-46](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/de17f82c-2bbd-4ebc-8777-4625d8563494)
 
 ## Starting a conversation
 If the conversation is accessed for the first time, they will be prompted with a message about that specific personality and what to expect when engaging with it. If not, the user will have the 5 most recently sent messages and chatbot outputs also given so that the user is able to remember their last conversation. To begin a conversation all the user has to do is type to the chatbot using the message box, and then press send and the user will receive a response from the chatbot.
+
+![Screenshot_from_2023-12-02_12-26-36](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/11e3b7bf-e252-43d9-aa0b-42cce2f036c9)
+
 
 # Future Ideas
 We would like to add a user function that allows the user to create their own personality chatbot to suit their specific desires. We would also like to add more themes for the app, as well as animations for when you open a conversation with a specific personality. We believe these ideas will make the app even more exciting for the user. 
