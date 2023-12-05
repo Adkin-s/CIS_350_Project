@@ -39,7 +39,7 @@ After logging in or signing up for SNRK, the user will be brought to a home scre
 
 ![Screenshot_from_2023-12-02_12-25-46](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/de17f82c-2bbd-4ebc-8777-4625d8563494)
 
-## Starting a conversation
+## Starting a conversation - Check!
 If the conversation is accessed for the first time, they will be prompted with a message about that specific personality and what to expect when engaging with it. If not, the user will have the 5 most recently sent messages and chatbot outputs also given so that the user is able to remember their last conversation. To begin a conversation all the user has to do is type to the chatbot using the message box, and then press send and the user will receive a response from the chatbot.
 
 ![Screenshot_from_2023-12-02_12-26-36](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/11e3b7bf-e252-43d9-aa0b-42cce2f036c9)
