@@ -6,16 +6,16 @@ The Multi-Personality AI Chatbot App.
 James Brands, Elijah Morgan, Drew Adkins
 
 # Abstract
-SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas. We would like to create a chatbot that is extremely simple to use, and completely safe for users.
+SNRK is a chatbot designed to engage users in dynamic and personalized conversations by embodying multiple distinct personalities. This README file provides a comprehensive introduction to SNRK, outlining its key features, installation and usage instructions, and the underlying technology that powers its multifaceted personas. We want to create a chatbot that is extremely simple to use, and completely safe for users.
 
 # Description
 SNRK is a unique chatbot application that stands out for its ability to embody multiple distinct personalities. Users can engage in dynamic and personalized conversations with SNRK, selecting from a variety of pre-defined personas that range from friendly and helpful to witty and sassy. The chatbot's natural language understanding capabilities ensure smooth interactions, and users can switch between personalities during conversations. SNRK is highly customizable, allowing users to define their preferred personalities and traits. SNRK redefines the chatbot experience, offering users a multifaceted and engaging conversational partner.
 
-# Architectural Design - Check!
-SNRK is based on a client-server-based architecture. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the user must either sign up or log in. Then once inside the app, the user can either choose to create a new conversation or continue an old conversation if one exists.
+# Architectural Design
+SNRK uses serveless architecture on Firebase. The easy-to-use user interface allows you to sign up or log in, so the user can access not only new chats but also old conversations across multiple devices. Before being able to use the app the user must log in. Then once inside the app, the user can continue the conversation.
 
-## Server - Check!
-The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. Whenever a registered user enters a new chat it sends the message to the server. The server then accesses the Open-Ai Server and sends the output to the SNRK app. Then the chatbot's answer is outputted to the SNRK app and is received by the user. 
+## Server
+The server-side processing will be enabled using Firebase. Whenever a new user registers with the app, the record will be stored in the server-side database. The client requests the ChatGPT API and displays the returned text in the SNRK App. Each message can be up to 100 API tokens.
 
 ## Diagrams
 ### Sequence Diagram
