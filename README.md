@@ -25,6 +25,9 @@ The server-side processing will be enabled using Firebase. Whenever a new user r
 ### Class Diagram
 ![SNRK Class UML](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/35142850-cc3c-457a-aa0e-680af128e412)
 
+## Testing
+We used the builtin unittest Python3 library to write our unit tests. Our approach ensures that each unit of our backend and frontend is tested independently and in isolation from the others.
+
 # User Guide/Implementation
 ## Starting the application
 First, the user needs to install the SNRK bot app from the app store onto their device. After installation, an icon should appear on the home screen. Click on the icon to open the SNRK bot app, and the user will be prompted with a signup or login page.
