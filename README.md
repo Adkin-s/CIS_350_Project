@@ -37,25 +37,26 @@ Before using the app, the user will be required to either sign up for the app or
 
 ![Screenshot_from_2023-12-02_12-29-14](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/f120a2fe-ad90-4e49-ac0c-ad99bf9fc73f)
 
-## Home Screen - Check!
-After logging in or signing up for SNRK, the user will be brought to a home screen where the user will have the ability to access different conversations with different personalities. The user will be able to press on each of the personalities to either begin or continue a conversation with this chatbot.
+## Home Screen
+After logging in or signing up for SNRK, the user will be brought to a home screen where the user will have the ability to access a conversation or multiple if they so desire by signing in again. The user will then be able to begin their conversation with this chatbot.
 
 ![Screenshot_from_2023-12-02_12-25-46](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/de17f82c-2bbd-4ebc-8777-4625d8563494)
 
-## Starting a conversation - Check!
-If the conversation is accessed for the first time, they will be prompted with a message about that specific personality and what to expect when engaging with it. If not, the user will have the 5 most recently sent messages and chatbot outputs also given so that the user is able to remember their last conversation. To begin a conversation all the user has to do is type to the chatbot using the message box, and then press send and the user will receive a response from the chatbot.
+## Starting a conversation
+Once a conversation tab is opened, the user may begin by typing any question or phrase to the app, and shortly thereafter the user will receive a snarky response right back. To begin a conversation all one must to do is type to the chatbot using the message box, and then press send and the user will receive a response from the chatbot.
 
 ![Screenshot_from_2023-12-02_12-26-36](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/11e3b7bf-e252-43d9-aa0b-42cce2f036c9)
 
 
 # Future Ideas
-We would like to add a user function that allows the user to create their own personality chatbot to suit their specific desires. We would also like to add more themes for the app, as well as animations for when you open a conversation with a specific personality. We believe these ideas will make the app even more exciting for the user. 
+We would like to add a user function that allows the user to create their own personality chatbot to suit their specific desires as well as other specific already designed chatbots. We would also like to add more themes for the app, as well as animations for when you open a conversation with a specific personality. We believe these ideas will make the app even more exciting for the user. Making the code safer is also a necessary change and a safer way for users to store their email and password would also be neccesary.
 
 # Conclusion
 We at SNRK believe that our multi-personality chatbot is a fun, easy-to-use chatbot, that you will be able to use for hours on end in your personal life.
 
 # Walkthrough Video
 
+[# https://youtu.be/q7IAqtvZajc](https://youtu.be/q7IAqtvZajc?si=24XVuHufVGplrjSl)
 
 ## Acknowledgments
 
