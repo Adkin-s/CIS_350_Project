@@ -55,6 +55,7 @@ We would like to add a user function that allows the user to create their own pe
 We at SNRK believe that our multi-personality chatbot is a fun, easy-to-use chatbot, that you will be able to use for hours on end in your personal life.
 
 # Walkthrough Video
+This walkthrough video shows out thought process through creating SNRK, as well as how to use the app through a few examples.
 
 [# https://youtu.be/q7IAqtvZajc](https://youtu.be/q7IAqtvZajc?si=24XVuHufVGplrjSl)
 
