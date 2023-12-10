@@ -57,7 +57,7 @@ We at SNRK believe that our multi-personality chatbot is a fun, easy-to-use chat
 # Walkthrough Video
 This walkthrough video shows out thought process through creating SNRK, as well as how to use the app through a few examples.
 
-[![Walkthrough Video](https://img.youtube.com/vi/q7IAqtvZajc?si=24XVuHufVGplrjSl/0.jpg)](https://www.youtube.com/watch?v=q7IAqtvZajc?si=24XVuHufVGplrjSl)
+![Walkthrough Video](https://www.youtube.com/watch?v=q7IAqtvZajc?si=24XVuHufVGplrjSl)
 
 ## Acknowledgments
 
