@@ -47,6 +47,27 @@ Once a conversation tab is opened, the user may begin by typing any question or 
 
 ![Screenshot_from_2023-12-02_12-26-36](https://github.com/Adkin-s/CIS_350_Project/assets/120053578/11e3b7bf-e252-43d9-aa0b-42cce2f036c9)
 
+# Risk Analysis and Retrospective
+## What were the risks, what were the problems, how did you deal with them during the project.
+DB (Firebase) Goes Down, API Servers go Down, No Network Connection, Password Grabbing, API Key grabbing, Bad User Input
+Password grabbing was solved by only storing authentication information in our database, nowhere else.
+As for the rest of the issues, we ran out of time to solve them. If we were to go on with this project, they would be our first priority.
+
+## What was done and what could have been done better.
+### GUI Missing Features:
+Missing Sign-up button
+Missing Password Reset Button
+Cannot Scroll in Chat Window
+
+### DB Missing Chat History:
+DB functionality created, but not fully implemented by due date.
+
+### API Key in Client
+Originally planned on having API run server-side, but scrapped due to limitations with the
+Pyrebase library and time constraints.
+
+### Unfiltered User Input
+Some characters (ex: “, ’) will cause the application to crash. Input filtering should be implemented.
 
 # Future Ideas
 We would like to add a user function that allows the user to create their own personality chatbots to suit their specific desires as well as other specific already designed chatbots. We would also like to add more themes for the app, as well as animations for when you open a conversation with a specific personality. We believe these ideas will make the app even more exciting for the user. Making the code safer is also a necessary change and a safer way for users to store their email and password would also be necessary.
