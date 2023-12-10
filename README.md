@@ -55,9 +55,7 @@ As for the rest of the issues, we ran out of time to solve them. If we were to g
 
 ## What was done and what could have been done better.
 ### GUI Missing Features:
-Missing Sign-up button
-Missing Password Reset Button
-Cannot Scroll in Chat Window
+Missing Sign-up button, Missing Password Reset Button, Cannot Scroll in Chat Window
 
 ### DB Missing Chat History:
 DB functionality created, but not fully implemented by due date.
